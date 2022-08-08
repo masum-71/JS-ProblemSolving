@@ -29,3 +29,10 @@ let secondLine ="an awesome web developer";
 let fullLine = firstLine + " " + secondLine;
 console.log(fullLine);
 //*************************************** */
+// Problem:4
+let givenNumber = 119;
+let divisor = 5;
+
+let remainder = givenNumber % divisor;
+console.log(remainder);
+//*************************************** */
