@@ -48,3 +48,29 @@ fruits.pop();
 fruits.push("watermelon");
 console.log(fruits);
 //*************************************** */
+
+// Problem:7
+
+const result = [
+  { name: "masum", mark: 85 },
+  { name: "tom", mark: 66 },
+  { name: "jane", mark: 95 },
+  { name: "peter", mark: 56 },
+  { name: "john", mark: 40 },
+  { name: "poter", mark: 30 },
+];
+
+for (let i = 0; i < result.length; i++) {
+  if (result[i].mark >= 80) {
+    console.log(`${result[i].name} got A`);
+  } else if (result[i].mark >= 60) {
+    console.log(`${result[i].name} got B`);
+  } else if (result[i].mark >= 50) {
+    console.log(`${result[i].name} got C`);
+  } else if (result[i].mark >= 40) {
+    console.log(`${result[i].name} got D`);
+  } else {
+    console.log(`${result[i].name} got F`);
+  }
+}
+//*************************************** */
