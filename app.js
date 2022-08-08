@@ -75,18 +75,30 @@ for (let i = 0; i < result.length; i++) {
 }
 //*************************************** */
 
-
 // Problem:8
 
 let number1 = 13;
 let number2 = 79;
 let number3 = 45;
 
-if(number1 > number2 && number1 > number3){
-    console.log(`number1 is largest`)
-}else if(number2 > number1 && number2 > number3){
-    console.log(`number2 is largest`)
-}else{
-    console.log(`number3 is largest`)
-};
+if (number1 > number2 && number1 > number3) {
+  console.log(`number1 is largest`);
+} else if (number2 > number1 && number2 > number3) {
+  console.log(`number2 is largest`);
+} else {
+  console.log(`number3 is largest`);
+}
+//*************************************** */
+
+// Problem:9
+
+let sideA = 9;
+let sideB = 8;
+let sideC = 9;
+
+if (sideA === sideB || sideA === sideC || sideB === sideC) {
+  console.log(`it is an isosceles triangle`);
+} else {
+  console.log(`it is not an isosceles triangle`);
+}
 //*************************************** */
