@@ -21,3 +21,11 @@ let totalMarks = math + bio + chemistry + physics + bangla;
 let avgMarks = totalMarks / 5;
 console.log(avgMarks);
 //*************************************** */
+
+// Problem:3
+let firstLine = "I am going to be";
+let secondLine ="an awesome web developer";
+
+let fullLine = firstLine + " " + secondLine;
+console.log(fullLine);
+//*************************************** */
