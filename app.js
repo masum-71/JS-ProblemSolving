@@ -24,15 +24,27 @@ console.log(avgMarks);
 
 // Problem:3
 let firstLine = "I am going to be";
-let secondLine ="an awesome web developer";
+let secondLine = "an awesome web developer";
 
 let fullLine = firstLine + " " + secondLine;
 console.log(fullLine);
 //*************************************** */
+
 // Problem:4
 let givenNumber = 119;
 let divisor = 5;
 
 let remainder = givenNumber % divisor;
 console.log(remainder);
+//*************************************** */
+
+// Problem:6
+
+let fruits = ["Apple", "Banana", "Orange"];
+let indexOfBanana = fruits.indexOf("Banana");
+console.log(indexOfBanana);
+fruits[indexOfBanana] = "Mango";
+fruits.pop();
+fruits.push("watermelon");
+console.log(fruits);
 //*************************************** */
