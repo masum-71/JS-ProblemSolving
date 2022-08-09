@@ -187,11 +187,49 @@ for (let i = 30; i <= 86; i++) {
 // Problem: 25
 
 let prices = [120, 250, 158, 195, 245, 165, 179, 350];
-for(let i of prices){
-  if(i > 200){
+for (let i of prices) {
+  if (i > 200) {
     continue;
   }
-  console.log(i)
+  console.log(i);
 }
 
 //*************************************** */
+
+// problem: 26
+
+function foo() {
+  console.log(`foo`);
+}
+
+function bar() {
+  console.log(`bar`);
+}
+
+foo(bar());
+bar(foo());
+//*************************************** */
+
+// problem: 27
+
+function make_avg(a, b, c) {
+  let average = (a + b + c) / 3;
+  return average;
+}
+
+console.log(make_avg(35, 15, 25));
+//*************************************** */
+
+// problem: 28
+
+let numbers = [12, 2, 5, 36, 48, 50];
+
+function makeAvg(numbers, size){
+  let total = 0;
+  for(let i of numbers){
+    total += i;
+  }
+  return total/ size;
+}
+
+console.log(makeAvg(numbers, numbers.length));
