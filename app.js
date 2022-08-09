@@ -134,3 +134,19 @@ function grad(marks){
 
 grad(marks)
 //*************************************** */
+
+// Problem:11
+
+let signal = "yellow";
+
+switch(signal){
+  case "red": console.log(`don't cross road, it's danger`)
+  break;
+  case "green": console.log(`cross road, it's safe`)
+  break;
+  case "yellow": console.log(`stop, it's danger`)
+  break;
+
+}
+
+//*************************************** */
