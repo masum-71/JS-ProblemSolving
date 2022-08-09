@@ -111,42 +111,67 @@ let marks = {
   malia: 59,
   salia: 80,
   lilia: 47,
-  jalaiya: 77
+  jalaiya: 77,
 };
 
-function grad(marks){
-  for(let key in marks){
-    if(marks[key] >= 90){
-      console.log(`${key} got A+`)
-    }else if(marks[key] >= 80 && marks[key] < 90){
-      console.log(`${key} got A`)
-    }else if(marks[key] >= 70 && marks[key] < 80){
-      console.log(`${key} got B`)
-    }else if(marks[key] >= 60 && marks[key] < 70){
-      console.log(`${key} got C`)
-    }else if(marks[key] >= 50 && marks[key] < 60){
-      console.log(`${key} got D`)
-    }else if( marks[key] < 50){
-      console.log(`${key} got F`)
+function grad(marks) {
+  for (let key in marks) {
+    if (marks[key] >= 90) {
+      console.log(`${key} got A+`);
+    } else if (marks[key] >= 80 && marks[key] < 90) {
+      console.log(`${key} got A`);
+    } else if (marks[key] >= 70 && marks[key] < 80) {
+      console.log(`${key} got B`);
+    } else if (marks[key] >= 60 && marks[key] < 70) {
+      console.log(`${key} got C`);
+    } else if (marks[key] >= 50 && marks[key] < 60) {
+      console.log(`${key} got D`);
+    } else if (marks[key] < 50) {
+      console.log(`${key} got F`);
     }
   }
 }
 
-grad(marks)
+grad(marks);
 //*************************************** */
 
 // Problem:11
 
 let signal = "yellow";
 
-switch(signal){
-  case "red": console.log(`don't cross road, it's danger`)
-  break;
-  case "green": console.log(`cross road, it's safe`)
-  break;
-  case "yellow": console.log(`stop, it's danger`)
-  break;
-
+switch (signal) {
+  case "red":
+    console.log(`don't cross road, it's danger`);
+    break;
+  case "green":
+    console.log(`cross road, it's safe`);
+    break;
+  case "yellow":
+    console.log(`stop, it's danger`);
+    break;
 }
 
+//*************************************** */
+
+// Problem: 19
+
+for (let i = 58; i <= 98; i++) {
+  console.log(i);
+}
+//*************************************** */
+// Problem: 20
+
+for (let i = 412; i <= 456; i++) {
+  if (i % 2 === 0) {
+    console.log(i);
+  }
+}
+//*************************************** */
+// Problem: 21
+
+for (let i = 581; i <= 623; i++) {
+  if (i % 2 !== 0) {
+    console.log(i);
+  }
+}
 //*************************************** */
