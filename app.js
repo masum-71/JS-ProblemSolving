@@ -224,12 +224,30 @@ console.log(make_avg(35, 15, 25));
 
 let numbers = [12, 2, 5, 36, 48, 50];
 
-function makeAvg(numbers, size){
+function makeAvg(numbers, size) {
   let total = 0;
-  for(let i of numbers){
+  for (let i of numbers) {
     total += i;
   }
-  return total/ size;
+  return total / size;
 }
 
 console.log(makeAvg(numbers, numbers.length));
+//*************************************** */
+
+// problem: 31
+
+let num = 13;
+
+for (let i = 1; i <= 10; i++) {
+  console.log(i * num);
+}
+//*************************************** */
+// problem: 32
+let name = "MASUM BILLAH";
+
+function lowerCase(name) {
+  return name.toLowerCase();
+}
+console.log(lowerCase(name));
+//*************************************** */
