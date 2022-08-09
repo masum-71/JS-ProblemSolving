@@ -274,13 +274,24 @@ function squareNumber(number) {
 console.log(squareNumber(number));
 //*************************************** */
 
-
 // problem: 35
 
 let hour = 2;
 
-function minutes(hour){
-  return hour *60;
+function minutes(hour) {
+  return hour * 60;
 }
 
-console.log(minutes(hour))
+console.log(minutes(hour));
+//*************************************** */
+// problem:36
+
+let years = [2023, 2024, 2025,1600, 1700,1900,2000,2004,1800, 2026, 2028, 2030];
+function findLeapYear(years) {
+  for (let i = 0; i < years.length; i++) {
+    if ((years[i] % 4 === 0 && years[i] % 100 !== 0) || years[i] % 400 === 0) {
+      console.log(`${years[i]} is a leap year`);
+    }
+  }
+}
+findLeapYear(years)
