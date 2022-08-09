@@ -102,3 +102,35 @@ if (sideA === sideB || sideA === sideC || sideB === sideC) {
   console.log(`it is not an isosceles triangle`);
 }
 //*************************************** */
+
+// Problem:10
+
+let marks = {
+  alia: 95,
+  dalia: 66,
+  malia: 59,
+  salia: 80,
+  lilia: 47,
+  jalaiya: 77
+};
+
+function grad(marks){
+  for(let key in marks){
+    if(marks[key] >= 90){
+      console.log(`${key} got A+`)
+    }else if(marks[key] >= 80 && marks[key] < 90){
+      console.log(`${key} got A`)
+    }else if(marks[key] >= 70 && marks[key] < 80){
+      console.log(`${key} got B`)
+    }else if(marks[key] >= 60 && marks[key] < 70){
+      console.log(`${key} got C`)
+    }else if(marks[key] >= 50 && marks[key] < 60){
+      console.log(`${key} got D`)
+    }else if( marks[key] < 50){
+      console.log(`${key} got F`)
+    }
+  }
+}
+
+grad(marks)
+//*************************************** */
