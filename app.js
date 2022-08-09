@@ -251,3 +251,36 @@ function lowerCase(name) {
 }
 console.log(lowerCase(name));
 //*************************************** */
+
+// problem: 33
+
+let firstName = "Masum";
+let lastName = "Billah";
+
+function fullName(firstName, lastName) {
+  return firstName + " " + lastName;
+}
+console.log(fullName(firstName, lastName));
+//*************************************** */
+
+// problem: 34
+
+let number = 6;
+
+function squareNumber(number) {
+  return number * number;
+}
+
+console.log(squareNumber(number));
+//*************************************** */
+
+
+// problem: 35
+
+let hour = 2;
+
+function minutes(hour){
+  return hour *60;
+}
+
+console.log(minutes(hour))
