@@ -311,3 +311,49 @@ function findOddSum(oddEvenNumber){
 }
 
 console.log(findOddSum(oddEvenNumber));
+
+//*************************************** */
+
+// Problem: 38
+
+let currentYear = 2027;
+
+function leapYear(currentYear){
+  if((currentYear + 1) % 4 === 0){
+    console.log(`this is ${currentYear} and next year ${currentYear+1} is a leap year`)
+  }else{
+    console.log(`this is ${currentYear} and next year ${currentYear+1} is not a leap year`)
+  }
+}
+
+leapYear(currentYear)
+//*************************************** */
+
+// Problem: 39
+
+let myBirthYear = 1991;
+
+function oddOrEven(myBirthYear){
+  if(myBirthYear % 2 === 0){
+    return true;
+  }else{
+    return false;
+  }
+};
+console.log(oddOrEven(myBirthYear))
+//*************************************** */
+
+// Problem: 42
+for(let i = 50; i <= 80; i++){
+  if(i % 2 !== 0){
+    console.log(i)
+  }
+}
+//*************************************** */
+
+// Problem: 43
+function add(a,b,c){
+  return a+b+c;
+}
+console.log(add(12,15,16));
+//*************************************** */
