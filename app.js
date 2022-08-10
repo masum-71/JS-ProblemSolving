@@ -296,19 +296,206 @@ function findLeapYear(years) {
     }
   }
 }
+
 findLeapYear(years);
 //*************************************** */
-// problem:37
 
-let oddEvenNumber = [5, 7, 8, 10, 45, 30];
+// Problem: 37
 
-function findOddSum(oddEvenNumber) {
+let oddEvenNumber = [5,7,8,10,45,30];
+function findOddSum(oddEvenNumber){
   let sum = 0;
-  for (let i = 0; i < oddEvenNumber.length; i++) {
-    if (oddEvenNumber[i] % 2 !== 0) {
-      sum += oddEvenNumber[i];
-    }
+  for(let i = 0; i < oddEvenNumber.length; i++){
+   if(oddEvenNumber[i] % 2 !== 0){
+    sum += oddEvenNumber[i];
+   }
   }
   return sum;
 }
+
 console.log(findOddSum(oddEvenNumber));
+
+//*************************************** */
+
+// Problem: 38
+
+let currentYear = 2027;
+
+function leapYear(currentYear){
+  if((currentYear + 1) % 4 === 0){
+    console.log(`this is ${currentYear} and next year ${currentYear+1} is a leap year`)
+  }else{
+    console.log(`this is ${currentYear} and next year ${currentYear+1} is not a leap year`)
+  }
+}
+
+leapYear(currentYear)
+//*************************************** */
+
+// Problem: 39
+
+let myBirthYear = 1991;
+
+function oddOrEven(myBirthYear){
+  if(myBirthYear % 2 === 0){
+    return true;
+  }else{
+    return false;
+  }
+};
+console.log(oddOrEven(myBirthYear))
+//*************************************** */
+
+// Problem: 42
+for(let i = 50; i <= 80; i++){
+  if(i % 2 !== 0){
+    console.log(i)
+  }
+}
+//*************************************** */
+
+// Problem: 43
+function add(a,b,c){
+  return a+b+c;
+}
+console.log(add(12,15,16));
+//*************************************** */
+
+// Problem: 44
+
+let celcius = 28;
+
+function fahrenheitConvertor(celcius){
+  return ((celcius * 9/5) + 32)
+}
+console.log(fahrenheitConvertor(celcius))
+//*************************************** */
+// Problem: 45
+
+let fahrenheit = 82;
+
+function celciusConvertor(fahrenheit){
+  return (fahrenheit - 32)* 5/9
+}
+
+console.log(celciusConvertor(fahrenheit));
+//*************************************** */
+
+// Problem: 46
+
+const mark = 98;
+
+switch(true){
+  case (mark >= 80 && mark <= 100):
+    console.log(`you got A+`)
+    break;
+  case (mark < 80 && mark >= 70):
+    console.log(`you got A`)
+    break;
+  case (mark < 70 && mark >= 60):
+    console.log(`you got B`)
+    break;
+  case (mark < 60 && mark >= 50):
+    console.log(`you got C`)
+    break;
+  case (mark < 50 && mark >= 40):
+    console.log(`you got D`)
+    break;
+  case (mark < 40):
+    console.log(`you got F`)
+    break;
+}
+//*************************************** */
+
+// Problem: 47
+
+//********** Simple Interest */
+
+
+function simpleInterestCount(capital, interestRate, year){
+  let interest = capital * (interestRate/100) * year;
+  return interest;
+}
+
+console.log(simpleInterestCount(25000, 8.5, 5));
+
+//********** Compound Interest */
+
+function compoundInterestCount(capital, interestRate, years, peryear){
+  let interest =capital *(1 + ((interestRate/100) / years))**(years*peryear) - capital
+  return interest;
+}
+
+console.log(compoundInterestCount(1000, 10, 2, 2));
+//*************************************** */
+
+// Problem: 48
+
+//*******  Smallest Number ****** */
+
+let arr = [25,16,35,65,45,12,15,18];
+let smallest = arr[0];
+for(let val of arr){
+  if(val < smallest){
+    smallest = val;
+  }
+}
+
+console.log(smallest);
+
+//******* Second largest Number ****** */
+
+function secondLargest(arr){
+  let newArr = arr.sort((a,b)=> b-a);
+  return newArr[1]
+
+}
+
+console.log(secondLargest(arr))
+//*************************************** */
+
+// Problem: 49
+
+function avg(arr){
+  let sum = 0;
+  for(let val of arr){
+    sum += val;
+  }
+  let avg = sum / arr.length;
+  return avg;
+}
+
+console.log(avg(arr));
+//*************************************** */
+
+// Problem: 50
+
+const height = 25;
+const width = 30;
+
+function rectangleArea(height, width){
+  let area = height * width;
+  return area;
+}
+
+console.log(rectangleArea(height, width))
+//*************************************** */
+
+// Problem: 51
+
+ console.log( arr.sort((a,b)=> a-b)[0])
+ //*************************************** */
+
+//  Problem: 56
+
+const side1 = 4;
+const side2 = 5;
+const side3 = 6;
+
+function triangleArea(a, b, c){
+  let s = (a+b+c)/2;
+  let area = Math.sqrt(s*(s-a)*(s-b)*(s-c))
+  return area;
+}
+console.log(triangleArea(side1, side2, side3))
+
