@@ -425,3 +425,55 @@ function compoundInterestCount(capital, interestRate, years, peryear){
 
 console.log(compoundInterestCount(1000, 10, 2, 2));
 //*************************************** */
+
+// Problem: 48
+
+//*******  Smallest Number ****** */
+
+let arr = [25,16,35,65,45,12,15,18];
+let smallest = arr[0];
+for(let val of arr){
+  if(val < smallest){
+    smallest = val;
+  }
+}
+
+console.log(smallest);
+
+//******* Second largest Number ****** */
+
+function secondLargest(arr){
+  let newArr = arr.sort((a,b)=> b-a);
+  return newArr[1]
+
+}
+
+console.log(secondLargest(arr))
+//*************************************** */
+
+// Problem: 49
+
+function avg(arr){
+  let sum = 0;
+  for(let val of arr){
+    sum += val;
+  }
+  let avg = sum / arr.length;
+  return avg;
+}
+
+console.log(avg(arr));
+//*************************************** */
+
+// Problem: 50
+
+const height = 25;
+const width = 30;
+
+function rectangleArea(height, width){
+  let area = height * width;
+  return area;
+}
+
+console.log(rectangleArea(height, width))
+//*************************************** */
