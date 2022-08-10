@@ -357,3 +357,23 @@ function add(a,b,c){
 }
 console.log(add(12,15,16));
 //*************************************** */
+
+// Problem: 44
+
+let celcius = 28;
+
+function fahrenheitConvertor(celcius){
+  return ((celcius * 9/5) + 32)
+}
+console.log(fahrenheitConvertor(celcius))
+//*************************************** */
+// Problem: 45
+
+let fahrenheit = 82;
+
+function celciusConvertor(fahrenheit){
+  return (fahrenheit - 32)* 5/9
+}
+
+console.log(celciusConvertor(fahrenheit));
+//*************************************** */
