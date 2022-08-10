@@ -477,3 +477,21 @@ function rectangleArea(height, width){
 
 console.log(rectangleArea(height, width))
 //*************************************** */
+
+// Problem: 51
+
+ console.log( arr.sort((a,b)=> a-b)[0])
+ //*************************************** */
+
+//  Problem: 56
+
+const side1 = 4;
+const side2 = 5;
+const side3 = 6;
+
+function triangleArea(a, b, c){
+  let s = (a+b+c)/2;
+  let area = Math.sqrt(s*(s-a)*(s-b)*(s-c))
+  return area;
+}
+console.log(triangleArea(side1, side2, side3))
