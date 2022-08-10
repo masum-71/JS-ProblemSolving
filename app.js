@@ -377,3 +377,51 @@ function celciusConvertor(fahrenheit){
 
 console.log(celciusConvertor(fahrenheit));
 //*************************************** */
+
+// Problem: 46
+
+const mark = 98;
+
+switch(true){
+  case (mark >= 80 && mark <= 100):
+    console.log(`you got A+`)
+    break;
+  case (mark < 80 && mark >= 70):
+    console.log(`you got A`)
+    break;
+  case (mark < 70 && mark >= 60):
+    console.log(`you got B`)
+    break;
+  case (mark < 60 && mark >= 50):
+    console.log(`you got C`)
+    break;
+  case (mark < 50 && mark >= 40):
+    console.log(`you got D`)
+    break;
+  case (mark < 40):
+    console.log(`you got F`)
+    break;
+}
+//*************************************** */
+
+// Problem: 47
+
+//********** Simple Interest */
+
+
+function simpleInterestCount(capital, interestRate, year){
+  let interest = capital * (interestRate/100) * year;
+  return interest;
+}
+
+console.log(simpleInterestCount(25000, 8.5, 5));
+
+//********** Compound Interest */
+
+function compoundInterestCount(capital, interestRate, years, peryear){
+  let interest =capital *(1 + ((interestRate/100) / years))**(years*peryear) - capital
+  return interest;
+}
+
+console.log(compoundInterestCount(1000, 10, 2, 2));
+//*************************************** */
