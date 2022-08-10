@@ -286,7 +286,9 @@ console.log(minutes(hour));
 //*************************************** */
 // problem:36
 
-let years = [2023, 2024, 2025,1600, 1700,1900,2000,2004,1800, 2026, 2028, 2030];
+let years = [
+  2023, 2024, 2025, 1600, 1700, 1900, 2000, 2004, 1800, 2026, 2028, 2030,
+];
 function findLeapYear(years) {
   for (let i = 0; i < years.length; i++) {
     if ((years[i] % 4 === 0 && years[i] % 100 !== 0) || years[i] % 400 === 0) {
@@ -294,4 +296,19 @@ function findLeapYear(years) {
     }
   }
 }
-findLeapYear(years)
+findLeapYear(years);
+//*************************************** */
+// problem:37
+
+let oddEvenNumber = [5, 7, 8, 10, 45, 30];
+
+function findOddSum(oddEvenNumber) {
+  let sum = 0;
+  for (let i = 0; i < oddEvenNumber.length; i++) {
+    if (oddEvenNumber[i] % 2 !== 0) {
+      sum += oddEvenNumber[i];
+    }
+  }
+  return sum;
+}
+console.log(findOddSum(oddEvenNumber));
