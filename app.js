@@ -295,4 +295,19 @@ function findLeapYear(years) {
   }
 }
 findLeapYear(years)
+//*************************************** */
 
+// Problem: 37
+
+let oddEvenNumber = [5,7,8,10,45,30];
+function findOddSum(oddEvenNumber){
+  let sum = 0;
+  for(let i = 0; i < oddEvenNumber.length; i++){
+   if(oddEvenNumber[i] % 2 !== 0){
+    sum += oddEvenNumber[i];
+   }
+  }
+  return sum;
+}
+
+console.log(findOddSum(oddEvenNumber));
